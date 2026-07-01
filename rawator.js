@@ -1,11 +1,14 @@
-export function RAWATOR(wake) {
+import { aWAKE } from "./aWAKE.js";
+
+export function RAWATOR() {
   return {
     id: "RAWATOR",
-    source: wake.id,
+    source: aWAKE.id,
     block: "GRUENDER",
-    sys: wake.sys,
-    tem: wake.tem,
+    sys: aWAKE.sys,
+    tem: aWAKE.tem,
+    state12: aWAKE.state12,
+    modules: aWAKE.modules,
     status: "OK"
   };
 }
-
