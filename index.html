@@ -2,24 +2,35 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>aWAKE</title>
+  <title>WURMLOCH-CORE</title>
+  <style>
+    body { font-family: monospace; background:#000; color:#0f0; }
+    button { margin: 1rem 0; padding:0.5rem 1rem; }
+    pre { border:1px solid #0f0; padding:1rem; }
+  </style>
 </head>
 <body>
 
-<button id="go">aWAKE</button>
-<pre id="out"></pre>
+<h1>WURMLOCH-CORE</h1>
+<button id="run">RUN CORE</button>
+
+<h2>WARP BLOCK</h2>
+<pre id="warp"></pre>
+
+<h2>CORE BLOCK</h2>
+<pre id="core"></pre>
 
 <script type="module">
-import { aWAKE } from "./aWAKE.js";
-import { RAWATOR } from "./rawator.js";
+  import { WURMLOCH_CORE_PIPE } from "./wurmloch-core-pipeline.js";
 
-document.getElementById("go").addEventListener("click", () => {
-  const block = RAWATOR(aWAKE);
-  document.getElementById("out").textContent =
-    JSON.stringify(block, null, 2);
-});
+  document.getElementById("run").addEventListener("click", () => {
+    const block = WURMLOCH_CORE_PIPE();
+    document.getElementById("warp").textContent =
+      JSON.stringify(block.warp, null, 2);
+    document.getElementById("core").textContent =
+      JSON.stringify(block.core, null, 2);
+  });
 </script>
 
 </body>
 </html>
-
