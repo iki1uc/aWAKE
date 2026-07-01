@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>aWAKE</title>
+</head>
+<body>
+
+<button id="go">aWAKE</button>
+<pre id="out"></pre>
+
+<script type="module">
+import { aWAKE } from "./aWAKE.js";
+import { RAWATOR } from "./rawator.js";
+
+document.getElementById("go").addEventListener("click", () => {
+  const block = RAWATOR(aWAKE);
+  document.getElementById("out").textContent =
+    JSON.stringify(block, null, 2);
+});
+</script>
+
+</body>
+</html>
 
