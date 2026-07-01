@@ -1,7 +1,5 @@
-import { aWAKE } from "./aWAKE.js";
-import { RAWATOR } from "./rawator.js";
+import { aWAKE_ENGINE } from "./ENGINE.js";
 
 export function START() {
-  return RAWATOR(aWAKE);
+  return aWAKE_ENGINE();
 }
-
