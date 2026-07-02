@@ -1,1 +1,20 @@
+TMP-TEXT
+---------
+
+raw:
+<hier kommt dein Originaltext rein>
+
+corrected:
+<hier schreibt die KI die korrigierte Version rein>
+
+structure:
+<erkannte Struktur, z.B. RESPO, ARG, CORE, MXU, etc.>
+
+errors:
+- <Fehler 1>
+- <Fehler 2>
+- <Fehler 3>
+
+notes:
+<Hinweise der KI zur Verbesserung>
 
