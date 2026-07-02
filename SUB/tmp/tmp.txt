@@ -1,20 +1,33 @@
 TMP-TEXT
 ---------
 
-raw:
-<hier kommt dein Originaltext rein>
+RAW:
+DEMΝ — SYSTEM START
+RUN DEMN
+OUTPUT
+effekt la al abr tasten nutzung ohne ereignis save respo
 
-corrected:
-<hier schreibt die KI die korrigierte Version rein>
+TMP:
+- respo.id: RESPO_CORE
+- respo.state: ACTIVE
+- respo.vector: [1, 0, 0]
+- respo.alias: "respo"
+- respo.pipeline: 3|6
+- respo.tmp: TMP_RESPO_CORE
 
-structure:
-<erkannte Struktur, z.B. RESPO, ARG, CORE, MXU, etc.>
+STRUCTURE:
+- modul: respo
+- typ: core
+- layer: mini
+- wake: aWAKE_ACTIVE
+- sub: params.txt, alias.txt, vector.map, wake.map
 
-errors:
-- <Fehler 1>
-- <Fehler 2>
-- <Fehler 3>
+ERRORS:
+- keine Strukturfehler erkannt
+- keine Textfehler erkannt
+- keine Pipelinefehler erkannt
 
-notes:
-<Hinweise der KI zur Verbesserung>
-
+NOTES:
+- TMP erfolgreich geladen
+- RAW erfolgreich übernommen
+- RESPO-Struktur vollständig
