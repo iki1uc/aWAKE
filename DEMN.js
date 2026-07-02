@@ -7,6 +7,7 @@ import { GALAXY_WARP_PIPE } from "./galaxy-warp-pipeline.js";
 import { WURMLOCH_CORE_PIPE } from "./wurmloch-core-pipeline.js";
 
 export function DEMN() {
+
   const master = START();
   const raw = RAWATOR();
   const awake = aWAKE.run();
@@ -15,6 +16,16 @@ export function DEMN() {
   const galaxyWarp = GALAXY_WARP_PIPE(master);
   const wurm = WURMLOCH_CORE_PIPE();
 
-  return { master, raw, awake, slave, galaxySlave, galaxyWarp, wurm };
-}
+  const vec92 = 92;
 
+  return {
+    vec92,
+    master,
+    raw,
+    awake,
+    slave,
+    galaxySlave,
+    galaxyWarp,
+    wurm
+  };
+}
