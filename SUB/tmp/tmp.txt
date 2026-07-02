@@ -1,33 +1,45 @@
-TMP-TEXT
----------
+TMP-SPUR
+--------
 
-RAW:
-DEMΝ — SYSTEM START
-RUN DEMN
-OUTPUT
-effekt la al abr tasten nutzung ohne ereignis save respo
+RESPO-ID: RESPO_CORE
+RESPO-NAME: respo
+RESPO-STATE: ACTIVE
 
-TMP:
-- respo.id: RESPO_CORE
-- respo.state: ACTIVE
-- respo.vector: [1, 0, 0]
-- respo.alias: "respo"
-- respo.pipeline: 3|6
-- respo.tmp: TMP_RESPO_CORE
+TECHNIKEN:
+- argumenteria
+- dir
+- core
+- tem
+- viµio
+- REAL
+- MXU
+- AXINXA
 
-STRUCTURE:
-- modul: respo
-- typ: core
-- layer: mini
-- wake: aWAKE_ACTIVE
-- sub: params.txt, alias.txt, vector.map, wake.map
+KOMPETENZEN:
+- struktur
+- vektor
+- alias
+- wake
+- pipeline
+- tmp
+- rec
+- gate
+- wurmloch
 
-ERRORS:
-- keine Strukturfehler erkannt
-- keine Textfehler erkannt
-- keine Pipelinefehler erkannt
+GATE:
+- GATE_MODE: NORMAL
+- GATE_ID: GATE_92
+- GATE_VECTOR: [1, 0, 0]
 
-NOTES:
-- TMP erfolgreich geladen
-- RAW erfolgreich übernommen
-- RESPO-Struktur vollständig
+WURMLOCH:
+- WURMLOCH_ID: WL_81_81_1
+- WURMLOCH_DEPTH: 3
+- WURMLOCH_GATE: OPEN
+
+EICH:
+- EICH_ID: EICH_12
+- EICH_LEVEL: 0.888
+
+CLUSTER:
+- CLUSTER_ID: 81~81(1)
+- CLUSTER_MODE: RESPO_SCAN
