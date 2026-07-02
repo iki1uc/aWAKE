@@ -1,9 +1,14 @@
 {
-  "raw": "",
-  "corrected": "",
-  "structure": null,
+  "raw": "DEMΝ — SYSTEM START\nRUN DEMN\nOUTPUT\neffekt la al abr tasten nutzung ohne ereignis save respo",
+  "corrected": "Effekt: la al abr. Tastennutzung ohne Ereignis. Save RESPO.",
+  "structure": {
+    "module": "respo",
+    "type": "core",
+    "layer": "mini",
+    "wake": "aWAKE_ACTIVE",
+    "sub": ["params.txt", "alias.txt", "vector.map", "wake.map"]
+  },
   "errors": [],
   "status": "OK",
-  "notes": ""
+  "notes": "TMP erfolgreich geladen. RAW übernommen."
 }
-
