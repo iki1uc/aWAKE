@@ -1,17 +1,16 @@
-import { START_GALAXY_WARP } from "./START_GALAXY_WARP.js";
 import { WURMLOCH_CORE } from "./wurmloch-core.js";
+import { DEMN } from "./DEMN.js";
 
 export function WURMLOCH_CORE_PIPE() {
-  const warpBlock = START_GALAXY_WARP();
 
-  const space =
-    warpBlock.warp.worm.gate + ":" + warpBlock.warp.worm.warp;
+  const demn = DEMN();
+  const space = demn.master.wake.id + ":" + demn.vec92;
 
-  const coreResult = WURMLOCH_CORE.run(space);
+  const warp = WURMLOCH_CORE.run(space);
 
   return {
-    warp: warpBlock,
-    core: coreResult
+    demn,
+    warp,
+    core: WURMLOCH_CORE
   };
 }
-
