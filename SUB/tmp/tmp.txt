@@ -1,3 +1,11 @@
+aWAKE/
+   SUB/
+      tmp/
+         tmp.txt
+         tmp.json
+         tmp.js
+
+
 TMP-SPUR
 --------
 
