@@ -1,35 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>DEMN — Gründerstart</title>
-
-  <style>
-    body { font-family: monospace; background:#000; color:#0f0; }
-    button { margin: 1rem 0; padding:0.5rem 1rem; }
-    pre { border:1px solid #0f0; padding:1rem; }
-  </style>
+<meta charset="UTF-8">
+<title>aWAKE – Aktivierung</title>
+<style>
+  body { background:#111; color:#eee; font-family:Arial; padding:40px; }
+  .box { background:#222; border:1px solid #444; padding:20px; margin-bottom:20px; }
+  h1 { text-align:center; color:#ff66aa; }
+</style>
 </head>
 
 <body>
 
-<h1>DEMN — SYSTEM START</h1>
-<button id="run">RUN DEMN</button>
+<h1>aWAKE – Aktivierung / Bewusstsein</h1>
 
-<h2>OUTPUT</h2>
-<pre id="out"></pre>
+<div class="box">
+  <h2>Geometrie: Dodekaeder</h2>
+  <p>aWAKE nutzt die 12‑Flächen‑Geometrie für Bewusstseins‑Aktivierung.</p>
+</div>
 
-<script type="module">
-  import { DEMN } from "./DEMN.js";
+<div class="box">
+  <h2>Frequenz: 963 Hz</h2>
+  <p>Die Bewusstseins‑Frequenz für Aktivierung.</p>
+</div>
 
-  document.getElementById("run").addEventListener("click", () => {
-    const block = DEMN();
-    console.log("DEMN:", block);
-
-    document.getElementById("out").textContent =
-      JSON.stringify(block, null, 2);
-  });
-</script>
+<div class="box">
+  <h2>Aktivierungs‑Matrix</h2>
+  <pre>
+12 Flächen
+12 Wege
+12 Aktivierungen
+Dodekaeder = Bewusstseinskörper
+  </pre>
+</div>
 
 </body>
 </html>
